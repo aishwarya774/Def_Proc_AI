@@ -1,0 +1,29 @@
+# HybridRAG PoC — Python Dependencies
+# No Docker, no heavy containers. Just pip install and go.
+
+# ── Web Framework ────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+httpx==0.27.0
+
+# ── LLM Integration ─────────────────────────────────────────
+langchain==0.2.6
+langchain-community==0.2.6
+langchain-openai==0.1.14
+
+# ── Embeddings (local, ~90 MB model) ────────────────────────
+sentence-transformers==3.0.1
+
+# ── Vector Store (in-process, no server) ─────────────────────
+chromadb==0.5.3
+
+# ── Document Loaders ────────────────────────────────────────
+pypdf==4.2.0
+docx2txt==0.8
+
+# ── Settings ─────────────────────────────────────────────────
+pydantic-settings==2.3.4
+
+# ── Token Counting ──────────────────────────────────────────
+tiktoken==0.7.0
